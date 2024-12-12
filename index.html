@@ -25,7 +25,7 @@
             <div class="top-two-cards">
                 <div class="two-cards">
                     <img src="images/tlaco1.JPG">
-                    <div class="card-text">
+                    <div class="card-text" id="whatsapp-link-4">
                         <img src="images/cart-icon.png">
                         <p>4 tlacoyos</p>
                     </div>
@@ -35,8 +35,8 @@
               
                 </div>
                 <div class="two-cards">
-                    <img src="images/tlaco2.JPG">
-                    <div class="card-text">
+                    <img src="images/tlaco2.JPG" id="whatsapp-link-6">
+                    <div class="card-text" >
                         <img src="images/cart-icon.png">
                         <p>6 tlacoyos</p>
                     </div>
@@ -49,7 +49,7 @@
             
             <div class="one-card">
                 <img src="images/tlaco-test.JPG">
-                <div class="card-text">
+                <div class="card-text" id="whatsapp-link-12">
                     <img src="images/cart-icon.png">
                     <p>12 tlacoyos</p>
                 </div>
@@ -59,8 +59,13 @@
             </div>
         </div>
 
-        <form action="https://submit-form.com/vM6N88o2J">
-            
+       <!-- <form action="https://submit-form.com/vM6N88o2J">
+            <input
+    type="hidden"
+    name="_redirect"
+    value="https://wa.me/525578857813"
+  />
+  <input type="hidden" name="_append" value="false" />
             <h3>Crea tu pedido</h3>
             <label for="fname">Nombre:</label>
             <input type="text" id="fname" name="nombre">
@@ -85,7 +90,7 @@
               
                 </select>
             
-          </form>
+          </form> -->
 
           <p class="event">¿Tienes un evento?</p>
 
@@ -105,6 +110,19 @@
     </div>
 
     
-        <script src="" async defer></script>
+        <script>
+
+document.getElementById('whatsapp-link-4').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/525578857813?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20paquete%20de%204%20tlacoyos';
+});
+
+document.getElementById('whatsapp-link-6').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/525578857813?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20paquete%20de%206%20tlacoyos';
+});
+
+document.getElementById('whatsapp-link-12').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/525578857813?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20paquete%20de%2012%20tlacoyos';
+});
+        </script>
     </body>
 </html>
